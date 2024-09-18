@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #f8f3ef; 
+	font-family: "微軟正黑體";
+	font-size: 16px;
+	position: relative;
+	text-decoration: none;
+}
+
+#wrapper { position: relative; width: 100% }
+
+.myfb{ 
+	position: fixed;
+    top: 50%;  /*設置垂直位置*/
+    right: 0;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+}
+.myfb:hover {  /*當滑鼠移至此區塊時，伸縮區塊*/
+    padding: 0 5px;
+}
+
+
+/*header*/
+#header { background: #a03c3a; width: 100%;}
+#top {
+	margin: 0 auto; 
+	padding: 0 auto;
+	height: 82px;
+	width: 950px;
+}
+#logo { float:left; padding: 5px 0;}
+
+
+/*nav*/
+#nav { padding: 35px 0 0 310px;}
+#nav ul,#nav ul li { list-style: none;  }
+#nav li { position: relative; float: left;}
+#nav li a { color: #fff; display: block; text-decoration: none; padding: 0 20px;}
+#nav li a:hover { color: #888888;}
+#nav li ul {/* 特定在第一層 > 第二層之後下拉部分之樣式 */
+    display: none;
+    float: left;
+    position: absolute;
+    left: 10px;
+	padding-top: 10px;  
+}
+#nav li:hover  ul { /* 當第一層選單被觸發時，指定第二層顯示 */ display: block;}
+#nav ul li { /* 特定在第二層或之後下拉部分 li 之樣式 */ border-bottom: 1px solid #DDD;}
+#nav ul li:last-child { /* 特定在第二層或之後下拉部分 li （最後一項不要底線）之樣式 */ border-bottom: none; }
+#nav  ul a { /* 第二層或之後 選單 li 之樣式 */
+    width: 100px;
+    padding: 10px 12px;    
+    color: #fff;        
+    background-color: #a03c3a;
+}
+#nav  ul a:hover { background-color: #EFD2D1;}
+
+/*content*/
+#banner { margin: 0 auto; padding: 0 auto; width: 950px;}
+#banner img { width: 950px;}
+
+
+/*content*/
+#content {
+	margin: 0 auto;
+	padding: 0 auto;		
+	width: 950px;
+}
+
+.newsA,{ margin-top: 20px;}
+
+.newsAA,.newsB,.newsC,.newsD { 
+	margin-top: 20px; 
+	border: 1px dashed #888888;  /* 虛線邊框1 像素 灰色*/
+    -webkit-box-shadow: 0 0 5px #cccccc;
+	-moz-box-shadow: 0 0 5px #cccccc;
+	box-shadow: 0 0 5px #cccccc; 
+} 
+
+.newsAA h2,.newsA h2,.newsB h2,.newsC h2,.newsD h2 { font-size: 24px; font-weight: 700; padding: 20px;}
+
+.newsB h3,.newsD h3,.newsAA h3{ 
+	font-size: 20px; 
+	font-weight: 700;
+	padding: 10px 0;
+	height: 30px; 
+	line-height: 24px; /* 設定文字行距 */
+	
+}
+
+.newsC h3 { 
+	font-size: 30px; 
+	font-weight: 700; 
+	padding: 20px; 
+	height: 10px; 
+	color: #a03c3a; 
+	line-height: 24px; /* 設定文字行距 */
+}
+
+.newsA h3,.newsG h3 { 
+	font-size: 20px; 
+	font-weight: 700; 
+	padding: 10px 0; 
+	height: 30px; 
+	color: #a03c3a; 
+	line-height: 24px; /* 設定文字行距 */
+}
+
+.newsB h3 { height: 50px;}
+.newsAA li, .newsA li,.newsB li { 
+        float:left;
+		width: 260px;
+		padding: 10px;
+		margin: 10px;
+		margin-left: 20px;
+	    background-color: #ffffff;    /* 背景 色白色*/
+        border: 1px dashed #888888;  /* 虛線邊框1 像素 灰色*/
+        border-style:solid; /* 實線框*/
+		border-color:#CCC; /* 實線框顏色*/
+        -webkit-box-shadow: 0 0 5px #cccccc;
+	    -moz-box-shadow: 0 0 5px #cccccc;
+	    box-shadow: 0 0 5px #cccccc;  
+		line-height: 25px;
+}
+
+.newsC li,.newsE li,.newsF li { 
+        float:left;
+		width: 890px;
+		padding: 10px;
+		margin: 0 10px;
+		margin-left: 20px;
+	    background-color: #ffffff;    /* 背景 色白色*/
+        border: 1px dashed #888888;  /* 虛線邊框1 像素 灰色*/
+        border-style:solid; /* 實線框*/
+		border-color:#CCC; /* 實線框顏色*/
+        -webkit-box-shadow: 0 0 5px #cccccc;
+	    -moz-box-shadow: 0 0 5px #cccccc;
+	    box-shadow: 0 0 5px #cccccc;    
+}
+
+.newsD li { 
+        float:left;
+		width: 260px;
+		padding: 10px;
+		margin: 0 10px;
+		margin-left: 20px;	 
+}
+
+.cont_1 { 
+        color: #FFF;
+     	font-size: 30px;
+		font-weight: 700;
+	    line-height: 20px;
+		-webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 32px;
+		background: #416ca2;
+		padding: 3px 20px; 
+		margin-left: 5px; 
+}
+
+
+.newsG .newsGcon li span,.newsG .newsGcon h3 span {
+	margin-left: 5px; 
+	padding: 2px 10px; 
+	background: #416ca2;
+	color:#FFF; 
+	font-size:15px;
+	font-weight:700;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.newsB li { width: 135px;}
+.newsC, .newsD li { width: 950px; float:left;  }
+.newsAA li img,  .newsA li img, .newsB img { width: 260px;}
+.newsB img { width: 135px;}
+.newsC img,.newsF img  { width: 850px;
+	       	 margin-left: 0px;
+			  padding: 20px; }		  
+.newsD img { width: 890px;}
+.newsE img { width: 400px;
+	       	 margin-left: 200px;
+			  padding: 20px; }
+			  
+
+.newsAA li a,.newsAA li a,.newsA li a, .newsB li a, .date a , .cont a, .newsC li a, .date a , .cont a,.newsD li a, .date a , .cont a { color: #a03c3a; text-decoration: none;}
+.newsAA li a:hover,.newsA li a:hover, .newsB li a:hover, .date a:hover, .cont a:hover, .newsC li a:hover, .date a:hover, .cont a:hover, .newsD li a:hover, .date a:hover, .cont a:hover { color: #81dee3; }
+.date { color: #C60; font-size: 14px; padding: 10px 0;}
+.date1 { color: #C60; font-size: 20px; padding: 20px;}
+.cont { color: #000; font-size: 15px; padding: 0px 0; line-height: 25px; height: 60px;}
+.newsB .cont { height: 80px;}
+.newsC .cont { color: #000; font-size: 15px; padding: 20px; line-height: 30px; height: 400px;} /* height: 400px 白底下方高度*/
+
+.newsE .cont { color: #6e3810; font-size: 18px; padding: 60px; line-height: 40px; height: 200px;} /* height: 400px 白底下方高度*/
+
+/* 這個我不要囉但命名我用同一個
+.newsG li { width: 392px; height: 450px; color: #000; font-size: 15px; padding: 20px; margin: 10px 20px; line-height: 30px; text-align:center;}
+.newsG li img { width: 392px;} */
+
+.newsG {
+        color: #000;
+		width: 885px;
+		padding: 10px;
+		margin: 20px 10px 10px 10px;
+		margin-left: 20px;
+	    background-color: #ffffff;    /* 背景 色白色*/
+        border: 1px dashed #888888;  /* 虛線邊框1 像素 灰色*/
+        border-style:solid; /* 實線框*/
+		border-color:#CCC; /* 實線框顏色*/
+        -webkit-box-shadow: 0 0 5px #cccccc;
+	    -moz-box-shadow: 0 0 5px #cccccc;
+	    box-shadow: 0 0 5px #cccccc;  
+		line-height: 33px;
+}
+.newsG .newsGimg { float: left;width: 300px;}
+.newsG .newsGcon { margin-left: 320px;}
+.newsG .newsGcon li span {
+	margin-left: 5px; 
+	padding: 2px 10px; 
+	background: #416ca2;
+	color:#FFF; 
+	font-size:15px;
+	font-weight:700;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/*page*/
+.page  { margin-top: 20px; border: 1px #CCCCCC dashed; border: 1px dashed #888888;  /* 虛線邊框1 像素 灰色*/
+                      -webkit-box-shadow: 0 0 5px #cccccc;
+	                   -moz-box-shadow: 0 0 5px #cccccc;
+	                   box-shadow: 0 0 5px #cccccc;    }
+.page h2 { font-size: 24px; font-weight: 700; padding: 20px;}
+.navM ul { padding: 20px;}
+.navM li { border: 1px solid #c5a6a3; float: left; margin-left: 20px; min-width: 70px; text-align:center; padding: 5px 10px;}
+.navM li a { color: #000; text-decoration: none;  }
+.navM li a:hover { color: #de8385;}
+.activition { background: #c14648; color: #fff;}
+li.activition a:hover  {  color: #fff;}
+
+
+/*footer*/
+#footer { margin: 0 auto; padding: 0 auto; text-align: center;}
+#footer p { 
+    color: #595757;
+	font-size: 14px;
+	line-height: 23px;
+	margin: 20px 0;
+}
+
+
+/*other*/
+.clear { clear: left; 
+         margin-left: 20px; 
+		 color: #ad413f;
+		 font-size: 22px;
+		 font-weight: 700;
+}
+
+/*fieldset*/
+fieldset {
+	text-align:center;
+}
+legend {
+	margin-left: 1em;
+	color: #009;
+    font-weight: bold;
+}
+label {
+	float: left;
+	width: 10em;
+	margin-right: 1em;
+	text-align:right;
+}
+fieldset ol {
+	list-style: none;
+	padding-top: 3px;
+	padding-left: 8em;
+	padding-bottom: 0px;
+}
+fieldset li {
+	line-height: 24px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align:left;
+}
+fieldset li input.fildform{
+	line-height: 24px;
+	height: 24px;
+	border: 1px solid #CCC;
+}
+fieldset .submit {
+	border-style: none;
+}
+

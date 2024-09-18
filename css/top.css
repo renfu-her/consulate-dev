@@ -1,0 +1,68 @@
+/*nav ====================================*/
+#nav { padding: 35px 0 0 320px;}
+#nav ul,#nav ul li { list-style: none;  }
+#nav li { position: relative; float: left;}
+#nav li a { color: #fff; display: block; text-decoration: none; padding: 0 10px;}
+#nav li a:hover { color: #FC0;}
+#nav li ul {/* 特定在第一層 > 第二層之後下拉部分之樣式 */
+    display: none;
+    float: left;
+    position: absolute;
+    left: 10px;
+	padding-top: 10px;  
+}
+#nav li:hover  ul { /* 當第一層選單被觸發時，指定第二層顯示 */ display: block;}
+#nav ul li { /* 特定在第二層或之後下拉部分 li 之樣式 */ border-bottom: 1px solid #DDD;}
+#nav ul li:last-child { /* 特定在第二層或之後下拉部分 li （最後一項不要底線）之樣式 */ border-bottom: none; }
+#nav  ul a { /* 第二層或之後 選單 li 之樣式 */
+    width: 100px;
+    padding: 10px 12px;    
+    color: #666;        
+    background-color: #EFD2D1;
+}
+#nav  ul a:hover { background-color: #a03c3a;}
+
+/*header_p ====================================*/
+#header_p { background: #be4846; position: relative; width: 100%;}
+#top_p {
+	background:url(../images/top_bg.png) no-repeat right top;
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 110px;
+	width: 950px;
+}
+#logo_p { position:absolute; z-index: 2;}
+
+
+/*nav_p ====================================*/
+#nav_ps {
+	background: url(../images/top_bg-opacity.png) repeat;
+	height: 30px;
+	position: absolute;
+	top: 80px;
+	width: 100%;
+}
+#nav_p { margin: 0 auto; width: 1000px; height: 30px;}
+#nav_p ul,#nav_p ul li { list-style: none; ;}
+#nav_p li { position: relative; float: left; min-width: 125px; font-size: 16px;}
+#nav_p li a { color: #fff; display: block; text-decoration: none; line-height: 30px;}
+#nav_p li a:hover { color: #FC0;}
+#nav_p li ul {/* 特定在第一層 > 第二層之後下拉部分之樣式 */
+    display: none;
+    float: left;
+    position: absolute;
+    left: 10px;
+	padding-top: 1px;  
+}
+#nav_p li:hover  ul { /* 當第一層選單被觸發時，指定第二層顯示 */ display: block; }
+#nav_p ul li { /* 特定在第二層或之後下拉部分 li 之樣式 */ border-bottom: 1px solid #DDD;}
+#nav_p ul li:last-child { /* 特定在第二層或之後下拉部分 li （最後一項不要底線）之樣式 */ border-bottom: none; }
+#nav_p  ul a { /* 第二層或之後 選單 li 之樣式 */
+    width: 100px;
+    padding: 5px 12px;    
+    color: #de8385;        
+    background-color: #EFD2D1;
+	opacity: 0.75;
+}
+#nav_p  ul a:hover { background-color: #a03c3a;}
+

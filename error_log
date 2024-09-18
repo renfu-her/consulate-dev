@@ -1,0 +1,2 @@
+[15-Dec-2016 00:26:31 Asia/Taipei] PHP Warning:  Creating default object from empty value in /home/goodwayt/public_html/consulate.idv.tw/sendmail.php on line 5
+[15-Dec-2016 00:26:31 Asia/Taipei] PHP Fatal error:  Call to undefined method stdClass::AddAddress() in /home/goodwayt/public_html/consulate.idv.tw/sendmail.php on line 14
